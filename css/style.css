@@ -119,6 +119,32 @@ nav ul button:hover{
     color: white;
     margin-bottom:20px;
     text-align: right;
-    transform: translateX(-30px); /* animação de carremento */
+    transform: translateX(-50px); /* animação de carremento */
     transition: transform 0.5s;
 }
+
+.header-block p{
+    color: white;
+    max-width: 280px;
+    text-align: right;
+    transform: translateX(-50px); /* animação de carremento */
+    transition: transform 0.4s;
+}
+
+/* Product catalog*/
+
+section .catalog{
+    width: 100vw;
+    padding: 100px;
+}
+
+section .filter-card{
+    max-width:  1000px;
+    height: 150px;
+    background: var(--gray);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+}                                      
