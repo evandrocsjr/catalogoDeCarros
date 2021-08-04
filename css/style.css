@@ -1,0 +1,89 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{  /* Selecionando todo o conteúdo e resetando css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    font-family: "Roboto", sans-serif;
+}
+
+:root{ /* Define um padrão de cor para o arquivo*/
+   --orange: #f78b00;
+   --blue: #00285f;
+   --gray: #ededed;
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden ; /* retira a barra horizontal de rolagem */
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background: var(--orange); /* Resgata o orange criado no :root*/
+}
+
+.content{
+    max-width: 1000px; /* responsive mobile */
+    min-width: 300px; /* responsive mobile*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; /* espaçamento maior que around*/
+    align-items: center;
+}
+
+.brand{
+    font-size: 24px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+nav ul{
+    flex-direction: row;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px; /*  para definir o espaço lateral */
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:#00285f83
+}
+
+nav ul button{
+    border: solid 1px var(--blue);
+    background: transparent;
+    padding: 5px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 30px;
+    color: var(--blue);
+}
+
+nav ul button:hover{
+    transition: color, background, 0.5s;
+    color: var(--orange);
+    background: var(--blue);
+}
